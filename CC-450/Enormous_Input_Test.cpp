@@ -1,5 +1,4 @@
-// https://codeforces.com/contest/2185/problem/A
-
+// https://www.codechef.com/problems/INTEST
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -9,17 +8,21 @@ using namespace std;
 
 
 void firebird_solve(){
-        int x ; 
-        cin >> x;
 
-            long long res ;
-       for(int i = 1; i <=x; i++){
-         if((sqrt(x * x) ) == x) {
-            res = i + 1;
+    long long n, k; 
+    cin >> n >> k; 
+
+    long  long a; 
+    long long count = 0 ;
+    while(n--){
+        cin >> a ; 
+
+        if(a % k == 0){
+            count++;
         }
-        cout << res << " " ;
-       }
-       cout << endl; 
+    }
+    cout << count ;
+        
 }
 
 
@@ -28,9 +31,9 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-    tst{
+    // tst{
         firebird_solve();
-    }
+    // }
 
     return 0;
 }
